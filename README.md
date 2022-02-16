@@ -1,16 +1,29 @@
-### Hi there 👋
+<p align="center">
+  <img src="https://raw.githubusercontent.com/berkoca/berkoca/master/neo.gif" />
+</p>
 
-<!--
-**berkoca/berkoca** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+___
 
-Here are some ideas to get you started:
+```js
+import { SoftwareDeveloper } from 'berkoca';
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+class Bio extends SoftwareDeveloper {
+  name     = 'Berk Koca';
+  title    = 'Software Developer';
+  company  = '-';
+  location = 'Istanbul, Turkey';
+}
+
+class Skills extends SoftwareDeveloper {
+  languages    = ['JavaScript', 'TypeScript'];
+  databases    = ['MySQL', 'MongoDB', 'PostgreSQL', 'Redis'];
+  orms         = ['Sequelize', 'Mongoose', 'TypeORM'];
+  frameworks   = ['Vue.js 2/3', 'Express.js', 'Socket.io'];
+  technologies = ['GraphQL', 'REST', 'Websocket'];
+}
+```
+___
+
+```js
+Promise.all([born, study, work, die]).then(life => process.exit());
+```
