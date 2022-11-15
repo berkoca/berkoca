@@ -9,17 +9,17 @@ import { SoftwareDeveloper } from 'berkoca';
 
 class Bio extends SoftwareDeveloper {
   name     = 'Berk Koca';
-  title    = 'Software Developer';
-  company  = '-';
+  title    = 'Full Stack Developer';
+  company  = 'Bolt Insight';
   location = 'Istanbul, Turkey';
 }
 
 class Skills extends SoftwareDeveloper {
   languages    = ['JavaScript', 'TypeScript'];
   databases    = ['MySQL', 'MongoDB', 'PostgreSQL', 'Redis'];
-  orms         = ['Sequelize', 'Mongoose', 'TypeORM'];
+  orms         = ['Sequelize', 'Mongoose', 'Prisma'];
   frameworks   = ['Vue.js 2/3', 'Express.js', 'Socket.io'];
-  technologies = ['GraphQL', 'REST', 'Websocket'];
+  technologies = ['GraphQL', 'REST', 'Websocket', 'RabbitMQ'];
 }
 ```
 ___
