@@ -18,7 +18,7 @@ class Skills extends SoftwareDeveloper {
   languages    = ['JavaScript', 'TypeScript'];
   databases    = ['MySQL', 'MongoDB', 'PostgreSQL', 'Redis'];
   orms         = ['Sequelize', 'Mongoose', 'Prisma'];
-  frameworks   = ['Vue.js 2/3', 'Express.js', 'Socket.io'];
+  frameworks   = ['Vue.js 2/3', 'React.js' 'Express.js', 'Socket.io'];
   technologies = ['GraphQL', 'REST', 'Websocket', 'RabbitMQ'];
 }
 ```
