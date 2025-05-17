@@ -2,28 +2,47 @@
   <img src="https://raw.githubusercontent.com/berkoca/berkoca/master/neo.gif" />
 </p>
 
-___
-
 ```js
-import { SoftwareDeveloper } from 'berkoca';
+import { Coffee } from 'caffeine';
+import { SoftwareDeveloper } from 'universe';
 
-class Bio extends SoftwareDeveloper {
-  name     = 'Berk Koca';
-  title    = 'Full Stack Developer';
-  company  = 'Bolt Insight';
-  location = 'Istanbul, Turkey';
-}
-
-class Skills extends SoftwareDeveloper {
-  languages    = ['JavaScript', 'TypeScript'];
-  databases    = ['MySQL', 'MongoDB', 'PostgreSQL', 'Redis'];
-  orms         = ['Sequelize', 'Mongoose', 'Prisma'];
-  frameworks   = ['Vue.js 2/3', 'React.js' 'Express.js', 'Socket.io'];
-  technologies = ['GraphQL', 'REST', 'Websocket', 'RabbitMQ'];
+class Berkoca extends SoftwareDeveloper {
+  constructor() {
+    super({ crashesWithoutCoffee: true });
+    
+    this.name = 'Berk Koca';
+    this.title = 'Full Stack Developer';
+    this.location = 'Istanbul, Turkey';
+    this.company = 'ShipEntegra';
+  }
+  
+  skills = {
+    languages: ['JavaScript', 'TypeScript', 'Go'],
+    databases: ['MongoDB', 'MySQL', 'PostgreSQL', 'Redis'],
+    frameworks: ['Vue.js', 'React.js', 'Nuxt.js', 'Express.js', 'Socket.io', 'NestJS'],
+    technologies: ['GraphQL', 'REST', 'Websocket', 'RabbitMQ', 'Docker', 'Kubernetes', 'AWS']
+  };
+  
+  async workDay() {
+    const coffee = new Coffee({ type: 'Americano', sugar: false });
+    
+    while(this.isAwake()) {
+      await this.drinkCoffee(coffee);
+      await this.writeCode({ bugs: false }); // optimistic
+      
+      if (this.bugs.length) {
+        await this.fixBugs();
+        await this.drinkMoreCoffee(coffee);
+      }
+    }
+  }
 }
 ```
-___
+
+---
 
 ```js
-Promise.all([born, study, work, die]).then(life => process.exit());
+Promise.all([born, study, work, learn])
+  .then((life) => console.log('Enjoying the journey!'))
+  .catch((error) => console.debug('Coffee needed:', error));
 ```
