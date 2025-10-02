@@ -13,7 +13,7 @@ class Berkoca extends SoftwareDeveloper {
     this.name = 'Berk Koca';
     this.title = 'Full Stack Developer';
     this.location = 'Istanbul, Turkey';
-    this.company = 'ShipEntegra';
+    this.company = 'Pınar';
   }
   
   skills = {
