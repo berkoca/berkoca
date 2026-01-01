@@ -11,7 +11,7 @@ class Berkoca extends SoftwareDeveloper {
     super({ crashesWithoutCoffee: true });
     
     this.name = 'Berk Koca';
-    this.title = 'Full Stack Developer';
+    this.title = 'Senior Backend Developer';
     this.location = 'Istanbul, Turkey';
     this.company = 'Pınar';
   }
@@ -19,7 +19,7 @@ class Berkoca extends SoftwareDeveloper {
   skills = {
     languages: ['JavaScript', 'TypeScript', 'Go'],
     databases: ['MongoDB', 'MySQL', 'PostgreSQL', 'Redis'],
-    frameworks: ['Vue.js', 'React.js', 'Nuxt.js', 'Express.js', 'Socket.io', 'NestJS'],
+    frameworks: ['Vue.js', 'React.js', 'Nuxt.js', 'Express.js', 'Socket.io', 'NestJS', 'Retter.io'],
     technologies: ['GraphQL', 'REST', 'Websocket', 'RabbitMQ', 'Docker', 'Kubernetes', 'AWS']
   };
   
